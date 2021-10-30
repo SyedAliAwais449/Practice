@@ -125,14 +125,15 @@
         app:layout_constraintVertical_bias="0.168" />
 
     <LinearLayout
-        android:layout_width="322dp"
-        android:layout_height="62dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="45dp"
         android:layout_marginTop="24dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/valueInPounds" >
+        app:layout_constraintTop_toBottomOf="@+id/valueInPounds">
 
         <CheckBox
             android:id="@+id/checkBox2"
@@ -147,6 +148,31 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/unCheckButton" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_menu_share"
+            android:paddingLeft="32dp"
+            android:text="Share" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/unSwitchButton" />
     </LinearLayout>
 
 

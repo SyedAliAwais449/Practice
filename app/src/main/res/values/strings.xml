@@ -7,4 +7,6 @@
     <string name="convert_to">Convert To</string>
     <string name="checkButton">Check Button is enabled</string>
     <string name="unCheckButton">Check Button is disabled</string>
+    <string name="switchButton">Switch is enabled</string>
+    <string name="unSwitchButton">Switch is disabled</string>
 </resources>
