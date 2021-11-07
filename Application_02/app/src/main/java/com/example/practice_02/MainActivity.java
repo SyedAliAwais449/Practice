@@ -20,16 +20,16 @@ public class MainActivity extends AppCompatActivity {
 
         switch (v.getId()) {
 
-//            case
-//                    R.id.buttonOpenSecodActivity:
-//
-//                intent = new
-//                        Intent(MainActivity.this,
-//                        MainActivity2.class);
-//
-//                startActivity(intent);
-//
-//                break;
+            case
+                    R.id.button2:
+
+                intent = new
+                        Intent(MainActivity.this,
+                        MainActivity2.class);
+
+                startActivity(intent);
+
+                break;
 
             case R.id.button:
 
