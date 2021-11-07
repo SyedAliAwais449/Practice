@@ -20,27 +20,15 @@ public class MainActivity extends AppCompatActivity {
 
         switch (v.getId()) {
 
-            case
-                    R.id.button2:
-
-                intent = new
-                        Intent(MainActivity.this,
-                        MainActivity2.class);
-
+            case R.id.button2:
+                intent= new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra("userId","bsef18a536");
                 startActivity(intent);
-
                 break;
-
             case R.id.button:
-
-                Uri uri =
-                        Uri.parse("tel:+923001234567");
-
-                intent = new
-                        Intent(Intent.ACTION_DIAL, uri);
-
+                Uri uri= Uri.parse("tel:+923001234567");
+                intent= new Intent(Intent.ACTION_DIAL, uri);
                 startActivity(intent);
-
                 break;
 
         }
