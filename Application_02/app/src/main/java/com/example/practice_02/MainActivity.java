@@ -8,13 +8,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d("t1", " onCreate Activity Main");
+        textView= findViewById(R.id.textView);
     }
     @Override
     protected void onStart() {
@@ -81,5 +84,21 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
         }
+    }
+    @Override
+
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putString("value", "asdf");
+        Log.d("t1", "onSaveInstanceState: ");
+    }
+    @Override
+
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.d("t1", "onRestoreInstanceState: ");
+        String myString = savedInstanceState.getString("value");
+        textView.setText(myString);
+
     }
 }
