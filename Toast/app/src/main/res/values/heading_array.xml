@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="headings">
+        <item>cat</item>
+        <item>dog</item>
+        <item>mouse</item>
+        <item>rat</item>
+    </string-array>
+</resources>
